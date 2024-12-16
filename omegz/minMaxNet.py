@@ -44,7 +44,12 @@ def fetch_data(url):
         return pd.DataFrame()  # Return an empty DataFrame on error
 
 # Updated URL
-url = "https://parallelrun-publicationtool.jao.eu/nordic/api/data/maxNetPos?FromUtc=2022-01-04T23%3A00%3A00.000Z&ToUtc=2024-01-04T23%3A00%3A00.000Z"
+
+#for old data uncomment this
+#url = "https://parallelrun-publicationtool.jao.eu/nordic/api/data/maxNetPos?FromUtc=2022-01-04T23%3A00%3A00.000Z&ToUtc=2024-01-04T23%3A00%3A00.000Z"
+
+#new data
+url = "https://publicationtool.jao.eu/nordic/api/data/maxNetPos?FromUtc=2024-10-29T23%3A00%3A00.000Z&ToUtc=2024-12-17T23%3A00%3A00.000Z"
 df = fetch_data(url)
 
 
