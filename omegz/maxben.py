@@ -42,8 +42,14 @@ def fetch_data(url):
         print(f"Error making the GET request: {e}")
         return pd.DataFrame()  # Return an empty DataFrame on error
 
-# Updated URL
-url = "https://parallelrun-publicationtool.jao.eu/nordic/api/data/maxExchanges?FromUtc=2022-01-06T23%3A00%3A00.000Z&ToUtc=2024-12-15T23%3A00%3A00.000Z"
+# old data url uncomment when u want htis
+#url = "https://parallelrun-publicationtool.jao.eu/nordic/api/data/maxExchanges?FromUtc=2022-01-06T23%3A00%3A00.000Z&ToUtc=2024-12-15T23%3A00%3A00.000Z"
+
+
+url = "https://publicationtool.jao.eu/nordic/api/data/maxExchanges?FromUtc=2024-10-29T23%3A00%3A00.000Z&ToUtc=2024-12-16T23%3A00%3A00.000Z"
+
+
+
 df = fetch_data(url)
 
 
